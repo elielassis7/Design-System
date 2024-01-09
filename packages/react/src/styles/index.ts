@@ -6,7 +6,7 @@ export const { styled, css, config, getCssText, globalCss, keyframes, theme, cre
     ...defaultThemeMap,
     width: 'space',
     height: 'space'
-  }
+  },
   theme: {
     colors,
     fontSizes,
