@@ -1,9 +1,0 @@
-{
-  "extends": "@ignite-ui/ts-config/base.json",
-  "compilerOptions": {
-    "jsx": "react"
-  },
-  "include": [
-    "src"
-  ]
-}
