@@ -8,6 +8,13 @@ export default {
   args: {
     src: 'https://github.com/elielassis7.png',
     alt: 'Eliel Assis'
+  },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text'
+      }
+    }
   }
 } as Meta<AvatarProps>
 

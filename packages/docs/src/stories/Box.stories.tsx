@@ -11,6 +11,13 @@ export default {
         <Text>Testando</Text>
       </>
     )
+  },
+  argTypes: {
+    children: {
+      control: {
+        type: null
+      }
+    }
   }
 } as Meta<BoxProps>
 
