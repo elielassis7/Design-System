@@ -62,8 +62,10 @@ __export(src_exports, {
   Avatar: () => Avatar2,
   Box: () => Box,
   Button: () => Button,
+  Checkbox: () => Checkbox2,
   Heading: () => Heading,
   Text: () => Text,
+  TextArea: () => TextArea,
   TextInput: () => TextInput
 });
 module.exports = __toCommonJS(src_exports);
@@ -247,7 +249,7 @@ var AvatarFallback = styled(Avatar.Fallback, {
   }
 });
 
-// src/components/Avatar/index.tsx
+// src/components/Avatar/Index.tsx
 var import_phosphor_react = require("phosphor-react");
 var import_jsx_runtime = require("react/jsx-runtime");
 function Avatar2(props) {
@@ -369,7 +371,7 @@ var Input = styled("input", {
   }
 });
 
-// src/components/TextInput/index.tsx
+// src/components/TextInput/Index.tsx
 var import_jsx_runtime2 = require("react/jsx-runtime");
 function TextInput(_a) {
   var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
@@ -378,12 +380,75 @@ function TextInput(_a) {
     /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Input, __spreadValues({}, props))
   ] });
 }
+
+// src/components/TextArea.tsx
+var TextArea = styled("textarea", {
+  backgroundColor: "$gray900",
+  padding: "$3 $4",
+  borderRadius: "$sm",
+  boxSizing: "border-box",
+  border: "2px solid $gray900",
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$white",
+  fontWeight: "$regular",
+  resize: "vertical",
+  minHeight: 80,
+  "&:focus": {
+    outline: 0,
+    borderColor: "$ignite300"
+  },
+  "&:disabled": {
+    opacity: 0.5,
+    cursor: "not-allowed"
+  },
+  "&:placeholder": {
+    color: "$gray400"
+  }
+});
+
+// src/components/Checkbox/Index.tsx
+var import_phosphor_react2 = require("phosphor-react");
+
+// src/components/Checkbox/style.ts
+var Checkbox = __toESM(require("@radix-ui/react-checkbox"));
+var CheckboxContainer = styled(Checkbox.Root, {
+  all: "unset",
+  width: "$6",
+  height: "$6",
+  backgroundColor: "$gray900",
+  borderRadius: "$xs",
+  lineHeight: 0,
+  cursor: "pointer",
+  overflow: "hidden",
+  boxSizing: "border-box",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  border: "2px solid $gray900",
+  "&:focus": {
+    border: "2px solid $ignite300"
+  }
+});
+var CheckboxIndicator = styled(Checkbox.Indicator, {
+  color: "$white",
+  width: "$4",
+  height: "$4"
+});
+
+// src/components/Checkbox/Index.tsx
+var import_jsx_runtime3 = require("react/jsx-runtime");
+function Checkbox2(props) {
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(CheckboxContainer, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(CheckboxIndicator, { asChild: true, children: /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(import_phosphor_react2.Check, { weight: "bold" }) }) }));
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
   Box,
   Button,
+  Checkbox,
   Heading,
   Text,
+  TextArea,
   TextInput
 });

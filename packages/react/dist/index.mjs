@@ -209,7 +209,7 @@ var AvatarFallback = styled(Avatar.Fallback, {
   }
 });
 
-// src/components/Avatar/index.tsx
+// src/components/Avatar/Index.tsx
 import { User } from "phosphor-react";
 import { jsx, jsxs } from "react/jsx-runtime";
 function Avatar2(props) {
@@ -331,7 +331,7 @@ var Input = styled("input", {
   }
 });
 
-// src/components/TextInput/index.tsx
+// src/components/TextInput/Index.tsx
 import { jsx as jsx2, jsxs as jsxs2 } from "react/jsx-runtime";
 function TextInput(_a) {
   var _b = _a, { prefix } = _b, props = __objRest(_b, ["prefix"]);
@@ -340,11 +340,74 @@ function TextInput(_a) {
     /* @__PURE__ */ jsx2(Input, __spreadValues({}, props))
   ] });
 }
+
+// src/components/TextArea.tsx
+var TextArea = styled("textarea", {
+  backgroundColor: "$gray900",
+  padding: "$3 $4",
+  borderRadius: "$sm",
+  boxSizing: "border-box",
+  border: "2px solid $gray900",
+  fontFamily: "$default",
+  fontSize: "$sm",
+  color: "$white",
+  fontWeight: "$regular",
+  resize: "vertical",
+  minHeight: 80,
+  "&:focus": {
+    outline: 0,
+    borderColor: "$ignite300"
+  },
+  "&:disabled": {
+    opacity: 0.5,
+    cursor: "not-allowed"
+  },
+  "&:placeholder": {
+    color: "$gray400"
+  }
+});
+
+// src/components/Checkbox/Index.tsx
+import { Check } from "phosphor-react";
+
+// src/components/Checkbox/style.ts
+import * as Checkbox from "@radix-ui/react-checkbox";
+var CheckboxContainer = styled(Checkbox.Root, {
+  all: "unset",
+  width: "$6",
+  height: "$6",
+  backgroundColor: "$gray900",
+  borderRadius: "$xs",
+  lineHeight: 0,
+  cursor: "pointer",
+  overflow: "hidden",
+  boxSizing: "border-box",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  border: "2px solid $gray900",
+  "&:focus": {
+    border: "2px solid $ignite300"
+  }
+});
+var CheckboxIndicator = styled(Checkbox.Indicator, {
+  color: "$white",
+  width: "$4",
+  height: "$4"
+});
+
+// src/components/Checkbox/Index.tsx
+import { jsx as jsx3 } from "react/jsx-runtime";
+function Checkbox2(props) {
+  return /* @__PURE__ */ jsx3(CheckboxContainer, __spreadProps(__spreadValues({}, props), { children: /* @__PURE__ */ jsx3(CheckboxIndicator, { asChild: true, children: /* @__PURE__ */ jsx3(Check, { weight: "bold" }) }) }));
+}
 export {
   Avatar2 as Avatar,
   Box,
   Button,
+  Checkbox2 as Checkbox,
   Heading,
   Text,
+  TextArea,
   TextInput
 };
