@@ -8,6 +8,6 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@ignite-ui/docs"
+    "@call-ignite-ui/docs"
   ]
 }
