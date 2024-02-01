@@ -8,10 +8,10 @@
     "build": "turbo run build",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=@call-ignite-ui/docs && changeset publish"
+    "release": "turbo run build --filter=!@call-ignite-ui/docs && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
-    "turbo": "^1.11.3"
+    "turbo": "^1.12.2"
   }
 }
