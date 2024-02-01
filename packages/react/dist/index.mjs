@@ -212,7 +212,7 @@ var AvatarFallback = styled(Avatar.Fallback, {
   }
 });
 
-// src/components/Avatar/Index.tsx
+// src/components/Avatar/index.tsx
 import { User } from "phosphor-react";
 import { jsx, jsxs } from "react/jsx-runtime";
 function Avatar2(props) {

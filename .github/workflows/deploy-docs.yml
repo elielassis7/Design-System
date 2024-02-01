@@ -21,6 +21,9 @@ jobs:
       - run: npm ci
 
       - run: npm run build
+        env:
+          TURBO_TOKEN: UJiARNrFQ3qAOtO36M5iWnZG
+          TURBO_TEAM: eliel-assis-projects
 
       - name: Deploy Storybook
         working-directory: ./packages/docs
