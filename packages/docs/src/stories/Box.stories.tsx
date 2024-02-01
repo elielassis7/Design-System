@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react'
-import { Box, BoxProps, Text } from '@ignite-ui/react'
+import { Box, BoxProps, Text } from '@call-ignite-ui/react'
 
 
 export default {

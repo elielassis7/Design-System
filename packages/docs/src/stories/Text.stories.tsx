@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react'
-import { Text, TextProps } from '@ignite-ui/react'
+import { Text, TextProps } from '@call-ignite-ui/react'
 
 
 export default {

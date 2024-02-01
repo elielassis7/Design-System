@@ -1,5 +1,5 @@
 import { StoryObj, Meta } from '@storybook/react'
-import { Box, Text, Checkbox, CheckboxProps } from '@ignite-ui/react'
+import { Box, Text, Checkbox, CheckboxProps } from '@call-ignite-ui/react'
 
 
 
