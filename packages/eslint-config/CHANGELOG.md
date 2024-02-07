@@ -1,5 +1,11 @@
 # @call-ignite-ui/eslint-config
 
+## 2.2.0
+
+### Minor Changes
+
+- d944984: add props
+
 ## 2.1.0
 
 ### Minor Changes
