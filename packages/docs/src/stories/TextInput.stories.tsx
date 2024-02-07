@@ -3,6 +3,7 @@ import { Box, Text, TextInput, TextInputProps } from '@call-ignite-ui/react'
 
 
 
+
 export default {
   title: 'Form/Text Input',
   component: TextInput,
@@ -33,6 +34,7 @@ export const Disabled: StoryObj<TextInputProps> = {
 
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
-    prefix: 'call.com/'
+    prefix: 'call.com/',
+    placeholder: 'Your-username'
   }
 }

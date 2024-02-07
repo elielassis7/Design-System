@@ -8,5 +8,6 @@ export * from './components/TextArea'
 export * from './components/Checkbox/Index'
 export * from './components/MultiStep/Index'
 
+export * from './styles'
 
 
