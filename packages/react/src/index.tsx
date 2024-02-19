@@ -7,6 +7,7 @@ export * from './components/TextInput/Index'
 export * from './components/TextArea'
 export * from './components/Checkbox/Index'
 export * from './components/MultiStep/Index'
+export * from './components/Tooltip'
 
 export * from './styles'
 
