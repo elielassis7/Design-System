@@ -1902,6 +1902,8 @@ interface TooltipProps extends ComponentProps<typeof TooltipContainer> {
 }
 declare function Tooltip({ date, status }: TooltipProps): react_jsx_runtime.JSX.Element;
 
+declare function Toast(): react_jsx_runtime.JSX.Element;
+
 declare const styled: <Type extends _stitches_react_types_util.Function | keyof JSX.IntrinsicElements | react.ComponentType<any>, Composers extends (string | _stitches_react_types_util.Function | react.ComponentType<any> | {
     [name: string]: unknown;
 })[], CSS = _stitches_react_types_css_util.CSS<{}, {
@@ -3604,4 +3606,4 @@ declare const createTheme: <Argument0 extends string | ({
     selector: string;
 } & (Argument0 extends string ? _stitches_react_types_stitches.ThemeTokens<Argument1, ""> : _stitches_react_types_stitches.ThemeTokens<Argument0, "">);
 
-export { Avatar, type AvatarProps, Box, type BoxProps, Button, type ButtonProps, Checkbox, type CheckboxProps, Heading, type HeadingProps, MultiStep, type MultiStepProps, Text, TextArea, type TextAreaProps, TextInput, type TextProps, Tooltip, type TooltipProps, config, createTheme, css, getCssText, globalCss, keyframes, styled, theme };
+export { Avatar, type AvatarProps, Box, type BoxProps, Button, type ButtonProps, Checkbox, type CheckboxProps, Heading, type HeadingProps, MultiStep, type MultiStepProps, Text, TextArea, type TextAreaProps, TextInput, type TextProps, Toast, Tooltip, type TooltipProps, config, createTheme, css, getCssText, globalCss, keyframes, styled, theme };
