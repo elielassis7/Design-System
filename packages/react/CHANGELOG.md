@@ -1,5 +1,11 @@
 # @call-ignite-ui/react
 
+## 2.3.0
+
+### Minor Changes
+
+- add components Tooltip and Toast
+
 ## 2.2.0
 
 ### Minor Changes
