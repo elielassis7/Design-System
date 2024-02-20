@@ -488,7 +488,7 @@ function MultiStep({ size, currentStep = 1 }) {
 }
 MultiStep.displayName = "MultiStep";
 
-// src/components/Tooltip/index.tsx
+// src/components/Tooltip/Index.tsx
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 
@@ -545,7 +545,7 @@ var TooltipArrow = styled(Tooltip.Arrow, {
   fill: "$gray900"
 });
 
-// src/components/Tooltip/index.tsx
+// src/components/Tooltip/Index.tsx
 import { jsx as jsx5, jsxs as jsxs4 } from "react/jsx-runtime";
 function Tooltip2({ date, status }) {
   return /* @__PURE__ */ jsx5(TooltipProvider, { children: /* @__PURE__ */ jsxs4(TooltipContainer, { children: [
@@ -557,7 +557,7 @@ function Tooltip2({ date, status }) {
   ] }) });
 }
 
-// src/components/Toast/index.tsx
+// src/components/Toast/Index.tsx
 import { ToastProvider as ToastProvider2 } from "@radix-ui/react-toast";
 import { useState } from "react";
 
@@ -650,15 +650,15 @@ var ToastAction = styled(Toast.Action, {
   gridArea: "action"
 });
 
-// src/components/Toast/index.tsx
+// src/components/Toast/Index.tsx
 import { jsx as jsx6, jsxs as jsxs5 } from "react/jsx-runtime";
-function Toast2() {
+function Toast2({ title, description }) {
   const [open, setOpen] = useState(false);
   return /* @__PURE__ */ jsxs5(ToastProvider2, { swipeDirection: "right", children: [
     /* @__PURE__ */ jsx6(
       Button,
       {
-        variant: "tertiary",
+        variant: "primary",
         size: "md",
         onClick: () => {
           setOpen(false);
@@ -670,9 +670,9 @@ function Toast2() {
       }
     ),
     /* @__PURE__ */ jsxs5(ToastRoot, { open, onOpenChange: setOpen, children: [
-      /* @__PURE__ */ jsx6(ToastTitle, { children: "New task" }),
-      /* @__PURE__ */ jsx6(ToastDescription, { children: "Success Save!" }),
-      /* @__PURE__ */ jsx6(ToastAction, { asChild: true, altText: "Undo", children: /* @__PURE__ */ jsx6(Button, { variant: "primary", size: "sm", children: "Undo" }) })
+      /* @__PURE__ */ jsx6(ToastTitle, { children: title }),
+      /* @__PURE__ */ jsx6(ToastDescription, { children: description }),
+      /* @__PURE__ */ jsx6(ToastAction, { asChild: true, altText: "Undo", children: /* @__PURE__ */ jsx6(Button, { variant: "secondary", size: "sm", children: "Undo" }) })
     ] }),
     /* @__PURE__ */ jsx6(ToastViewport, {})
   ] });

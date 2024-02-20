@@ -539,7 +539,7 @@ function MultiStep({ size, currentStep = 1 }) {
 }
 MultiStep.displayName = "MultiStep";
 
-// src/components/Tooltip/index.tsx
+// src/components/Tooltip/Index.tsx
 var import_date_fns = require("date-fns");
 var import_locale = require("date-fns/locale");
 
@@ -596,7 +596,7 @@ var TooltipArrow = styled(Tooltip.Arrow, {
   fill: "$gray900"
 });
 
-// src/components/Tooltip/index.tsx
+// src/components/Tooltip/Index.tsx
 var import_jsx_runtime5 = require("react/jsx-runtime");
 function Tooltip2({ date, status }) {
   return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(TooltipProvider, { children: /* @__PURE__ */ (0, import_jsx_runtime5.jsxs)(TooltipContainer, { children: [
@@ -608,7 +608,7 @@ function Tooltip2({ date, status }) {
   ] }) });
 }
 
-// src/components/Toast/index.tsx
+// src/components/Toast/Index.tsx
 var import_react_toast = require("@radix-ui/react-toast");
 var import_react3 = require("react");
 
@@ -701,15 +701,15 @@ var ToastAction = styled(Toast.Action, {
   gridArea: "action"
 });
 
-// src/components/Toast/index.tsx
+// src/components/Toast/Index.tsx
 var import_jsx_runtime6 = require("react/jsx-runtime");
-function Toast2() {
+function Toast2({ title, description }) {
   const [open, setOpen] = (0, import_react3.useState)(false);
   return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(import_react_toast.ToastProvider, { swipeDirection: "right", children: [
     /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
       Button,
       {
-        variant: "tertiary",
+        variant: "primary",
         size: "md",
         onClick: () => {
           setOpen(false);
@@ -721,9 +721,9 @@ function Toast2() {
       }
     ),
     /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(ToastRoot, { open, onOpenChange: setOpen, children: [
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(ToastTitle, { children: "New task" }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(ToastDescription, { children: "Success Save!" }),
-      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(ToastAction, { asChild: true, altText: "Undo", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(Button, { variant: "primary", size: "sm", children: "Undo" }) })
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(ToastTitle, { children: title }),
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(ToastDescription, { children: description }),
+      /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(ToastAction, { asChild: true, altText: "Undo", children: /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(Button, { variant: "secondary", size: "sm", children: "Undo" }) })
     ] }),
     /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(ToastViewport, {})
   ] });

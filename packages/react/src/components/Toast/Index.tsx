@@ -1,7 +1,7 @@
 import { ToastProvider } from "@radix-ui/react-toast";
 import { useState, useRef, useEffect, ComponentProps } from "react";
 import { Button } from "../Button";
-import { ToastAction, ToastDescription, ToastRoot, ToastTitle, ToastViewport } from "./style";´
+import { ToastAction, ToastDescription, ToastRoot, ToastTitle, ToastViewport } from "./style"
 
 interface ToastProps extends ComponentProps<typeof ToastRoot> {
   title: string;
